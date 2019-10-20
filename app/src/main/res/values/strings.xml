@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Assignment</string>
+
+    <string name="service">SERVICES</string>
+    <string name="home">HOME</string>
+    <string name="feeds">FEEDS</string>
+    <string name="approvals">APPROVALS</string>
+    <string name="more">MORE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

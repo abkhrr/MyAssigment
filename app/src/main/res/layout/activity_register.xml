@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".logAndReg.RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/resgister"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvThanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="20"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-black"
+            android:text="Thank you for Choosing Us, Please Complete this form to Sign-Up."/>
+
+        <RelativeLayout
+            android:id="@+id/field1"
+            android:layout_below="@+id/tvThanks"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:inputType="textPersonName"
+                android:layout_centerHorizontal="true"
+                android:hint="Name"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/field2"
+            android:layout_below="@+id/field1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/textUname"
+                android:layout_width="300dp"
+                android:inputType="textPersonName"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Username"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/field3"
+            android:layout_below="@id/field2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/textEmail"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:cursorVisible="true"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:hint="Email"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/field4"
+            android:layout_below="@+id/field3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/textPassword"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:cursorVisible="true"
+                android:layout_marginTop="10dp"
+                android:hint="Password"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSignUpOk"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/field4"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="SIGN UP"/>
+
+        <TextView
+            android:id="@+id/tvAlready"
+            android:layout_below="@id/btnSignUpOk"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="Alredy have an account?"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tvAlready2"
+            android:layout_below="@id/tvAlready"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/btnSignUpGoogle"
+            android:layout_below="@+id/tvAlready2"
+            android:layout_width="225dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="40dp"
+            android:background="@drawable/empty_space">
+
+            <ImageView
+                android:id="@+id/logo_google"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/googleic"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp" />
+
+            <RelativeLayout
+                android:layout_toEndOf="@+id/logo_google"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN-UP WITH GOOGLE"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

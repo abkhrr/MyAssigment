@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/services"
+        android:title="@string/service"
+        android:icon="@drawable/service"/>
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/homepage"/>
+
+    <item
+        android:id="@+id/feeds"
+        android:title="@string/feeds"
+        android:icon="@drawable/feed"/>
+    <item
+        android:id="@+id/approvals"
+        android:title="@string/approvals"
+        android:icon="@drawable/approvee"/>
+
+    <item
+        android:id="@+id/more"
+        android:title="@string/more"
+        android:icon="@drawable/menu"/>
+
+</menu>

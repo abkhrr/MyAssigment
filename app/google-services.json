@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "834123762586",
+    "firebase_url": "https://asessment-batam.firebaseio.com",
+    "project_id": "asessment-batam",
+    "storage_bucket": "asessment-batam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834123762586:android:8a724ba18aa929811d8823",
+        "android_client_info": {
+          "package_name": "com.example.assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834123762586-ffa10f5ehuj6kre9a553gqolnlnmffck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.assignment",
+            "certificate_hash": "aa7403937508e123af65cd1b126fa76d97e0cc48"
+          }
+        },
+        {
+          "client_id": "834123762586-krv2msvbqba64erionc4mft3d06c3eo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKJd9avVBIWnShWmoAPP8y66y3mpCt_Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834123762586-krv2msvbqba64erionc4mft3d06c3eo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

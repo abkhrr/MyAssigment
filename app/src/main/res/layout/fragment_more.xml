@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".fragments.MoreFragment">
+
+    <ImageView
+        android:id="@+id/und"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/underconstruct"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_below="@+id/und"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TABS UNDER CONSTRUCTION"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="LOG-OUT">
+        </Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>
