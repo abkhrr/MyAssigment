@@ -67,6 +67,14 @@ For okhttp is optional when you need to add `clients` in your HTTP request.
 For json contract i have use this one, if you want to set-up same with my
 project just follow this jSon contract at this [link] (https://www.abkhrr.com/assesment/employee2.php)
 
+if you want to add image through database just add this implementation :
+
+```
+implementation 'com.github.bumptech.glide:glide:4.10.0'
+annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+implementation 'com.squareup.picasso:picasso:2.71828'
+```
+
 # Simple unit-test
 - i have declare some simple unit test for mvvm pattern (RECYCLERVIEW) to get the response.
 
