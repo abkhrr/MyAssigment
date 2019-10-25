@@ -2,6 +2,7 @@ package com.example.assignment;
 
 import android.app.Application;
 
+import androidx.annotation.NonNull;
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
 import androidx.lifecycle.Observer;
 
@@ -16,13 +17,26 @@ import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExampleUnitRecyclerView {
+import static org.junit.Assert.*;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class ExampleAndroidRecyclerViewTest {
     @Rule
     public InstantTaskExecutorRule rule = new InstantTaskExecutorRule();
 
     @Mock
     private Observer<Employee> observer;
     private Application application;
+
+
+    @Test
+    public void addition_isCorrect() {
+        assertEquals(4, 2 + 2);
+    }
 
     @Before
     public void initMocks(){
