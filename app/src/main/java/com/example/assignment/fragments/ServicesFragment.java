@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.assignment.CardviewOption.FilesActivity;
+import com.example.assignment.CardviewOption.TrackerActivity;
 import com.example.assignment.R;
 import com.example.assignment.logAndReg.LoginActivity;
 
@@ -26,7 +27,7 @@ public class ServicesFragment extends Fragment {
 
     private TextView uname;
     SharedPreferences sharedPreferences;
-    private RelativeLayout cv4;
+    private RelativeLayout cv4, cv1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -39,11 +40,20 @@ public class ServicesFragment extends Fragment {
         uname.setText(username);
 
         cv4 = (RelativeLayout) view.findViewById(R.id.cv4);
+        cv1 = (RelativeLayout) view.findViewById(R.id.cv1);
 
         cv4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext().getApplicationContext(), FilesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext().getApplicationContext(), TrackerActivity.class);
                 startActivity(intent);
             }
         });
