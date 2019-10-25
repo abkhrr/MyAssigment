@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -15,46 +16,47 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258">
+        app:layout_constraintVertical_bias="0.323">
 
         <LinearLayout
             android:id="@+id/slider1Title"
             android:layout_width="wrap_content"
             android:orientation="vertical"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dip"
             android:layout_height="wrap_content"
             android:background="@android:color/white">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Organize"
                 android:fontFamily="sans-serif-black"
-                android:text="MANAGE"
                 android:textAllCaps="true"
                 android:textColor="#052554"
-                android:textSize="35dip"
+                android:textSize="40dip"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="meetings"
+                android:text="Attendance &amp;"
                 android:fontFamily="sans-serif-black"
-                android:textAllCaps="true"
-                android:textColor="#052554"
-                android:textSize="35dip"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
-                android:text="With Employee"
                 android:textAllCaps="true"
                 android:textColor="#052554"
                 android:textStyle="bold"
-                android:textSize="35dip"
+                android:textSize="40dip"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="organize file"
+                android:fontFamily="sans-serif-black"
+                android:textAllCaps="true"
+                android:textColor="#052554"
+                android:textSize="40dip"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,7 +72,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Arrange time to meeting and "
+                android:text="Manage employee time and "
                 android:textColor="#052554"
                 android:textSize="17dp"
                 android:textStyle="bold" />
@@ -78,7 +80,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="manage emplooyee attendance"
+                android:text="access their file with"
                 android:textColor="#052554"
                 android:textSize="17dp"
                 android:textStyle="bold" />
@@ -86,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="&amp; attendance reports."
+                android:text="easy access."
                 android:textColor="#052554"
                 android:textSize="17dp"
                 android:textStyle="bold" />
@@ -96,13 +98,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="225dip"
-            android:layout_marginTop="10dip">
+            android:layout_height="250dip"
+            android:layout_marginTop="30dip">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/employee">
+                android:src="@drawable/timeorganizer">
             </ImageView>
         </RelativeLayout>
 

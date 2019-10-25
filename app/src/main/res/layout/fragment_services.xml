@@ -146,8 +146,8 @@
 
                 <RelativeLayout
                     android:id="@+id/cv2"
-                    android:layout_width="170dp"
-                    android:layout_height="150dp"
+                    android:layout_width="170dip"
+                    android:layout_height="150dip"
                     android:layout_marginTop="27dp"
                     android:layout_marginStart="15dp"
                     android:background="@drawable/cv_cover"

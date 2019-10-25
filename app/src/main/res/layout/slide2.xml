@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,106 +10,104 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:background="@android:color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258">
 
         <LinearLayout
             android:id="@+id/slider1Title"
             android:layout_width="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/white">
+            android:layout_marginStart="20dip"
+            android:background="@android:color/white"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Track"
                 android:fontFamily="sans-serif-black"
+                android:text="Organize"
                 android:textAllCaps="true"
                 android:textColor="#052554"
-                android:textStyle="bold"
-                android:textSize="40dp"
-                />
+                android:textSize="35dip"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
                 android:text="Attendance &amp;"
-                android:fontFamily="sans-serif-black"
                 android:textAllCaps="true"
                 android:textColor="#052554"
-                android:textStyle="bold"
-                android:textSize="40dp"
-                />
+                android:textSize="35dip"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Manage Shift"
                 android:fontFamily="sans-serif-black"
+                android:text="organize file"
                 android:textAllCaps="true"
                 android:textColor="#052554"
-                android:textStyle="bold"
-                android:textSize="40dp"
-                />
-            </LinearLayout>
+                android:textSize="35dip"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/contentP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="15dip"
             android:background="@android:color/white"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp">
+            android:orientation="vertical">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Manage employee Shift and "
+                android:text="Manage employee time and "
                 android:textColor="#052554"
-                android:textStyle="bold"
-                android:textSize="17dp"
-                />
+                android:textSize="17dip"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="access their weekly/monthly"
+                android:text="access their file with"
                 android:textColor="#052554"
-                android:textStyle="bold"
-                android:textSize="17dp"
-                />
+                android:textSize="17dip"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="attendance reports."
+                android:text="easy access."
                 android:textColor="#052554"
-                android:textStyle="bold"
-                android:textSize="17dp"
-                />
+                android:textSize="17dip"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="30dp">
+            android:layout_height="220dip"
+            android:layout_marginTop="10dip">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/sc">
-            </ImageView>
+                android:src="@drawable/sc" />
         </RelativeLayout>
 
 
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

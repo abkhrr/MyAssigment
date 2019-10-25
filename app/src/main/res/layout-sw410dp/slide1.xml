@@ -15,15 +15,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258">
+        app:layout_constraintVertical_bias="0.323">
 
         <LinearLayout
             android:id="@+id/slider1Title"
             android:layout_width="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/white">
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dip"
+            android:background="@android:color/white"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,17 +33,17 @@
                 android:text="MANAGE"
                 android:textAllCaps="true"
                 android:textColor="#052554"
-                android:textSize="35dip"
+                android:textSize="40dip"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="meetings"
                 android:fontFamily="sans-serif-black"
+                android:text="meetings"
                 android:textAllCaps="true"
                 android:textColor="#052554"
-                android:textSize="35dip"
+                android:textSize="40dip"
                 android:textStyle="bold" />
 
             <TextView
@@ -52,19 +53,18 @@
                 android:text="With Employee"
                 android:textAllCaps="true"
                 android:textColor="#052554"
-                android:textStyle="bold"
-                android:textSize="35dip"
-                />
+                android:textSize="40dip"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/contentP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@android:color/white"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
 
 
             <TextView
@@ -96,14 +96,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="225dip"
-            android:layout_marginTop="10dip">
+            android:layout_height="250dp"
+            android:layout_marginTop="30dip">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/employee">
-            </ImageView>
+                android:src="@drawable/employee"></ImageView>
         </RelativeLayout>
 
 
