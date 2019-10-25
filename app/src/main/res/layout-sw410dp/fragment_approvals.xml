@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".fragments.ApprovalsFragment">
 
     <LinearLayout
@@ -20,9 +19,9 @@
             android:id="@+id/imageWrapper"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal"
             android:layout_marginTop="25dp"
-            android:background="@android:color/white">
+            android:background="@android:color/white"
+            android:orientation="horizontal">
 
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -31,33 +30,32 @@
                 android:layout_height="35dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/userimgplc"/>
+                android:src="@drawable/userimgplc" />
 
             <TextView
                 android:id="@+id/textUnameAp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:layout_toEndOf="@+id/imgView1"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imgView1"
+                android:text="Username"
                 android:textColor="@android:color/black"
-                />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_alignParentEnd="true">
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginStart="5dp"
-                    android:src="@drawable/filter"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/filter" />
 
             </LinearLayout>
 
@@ -65,54 +63,50 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:text="My Approvals"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="sans-serif-black"
+                android:text="My Approvals"
                 android:textColor="@android:color/black"
-                android:layout_marginStart="20dp"/>
+                android:textSize="30dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_drop_down"
+                android:layout_marginStart="3dp"
                 android:layout_marginTop="-8dp"
-                android:layout_marginStart="3dp"/>
+                android:src="@drawable/ic_arrow_drop_down" />
 
         </LinearLayout>
-
 
 
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
-        android:layout_width="330dip"
-        android:layout_marginStart="15dip"
+        android:layout_width="350dp"
         android:layout_height="45dp"
+        android:layout_marginStart="30dp"
         android:background="@drawable/tabs_custom"
-        app:tabMode="fixed"
-        android:elevation="0dip"
         app:tabBackground="@drawable/tab_layout_selector"
-        app:tabSelectedTextColor="@android:color/white"
-        app:tabPaddingEnd="20dip"
-        app:tabPaddingStart="20dip"
         app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="30dp"
+        app:tabPaddingStart="30dp"
         app:tabRippleColor="@null"
-        app:tabTextAppearance="@style/TabTextAppearance">
-    </com.google.android.material.tabs.TabLayout>
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextAppearance="@style/TabTextAppearance"></com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/pager"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:background="#fcfcfc"
+    android:orientation="vertical"
     tools:context=".fragments.ServicesFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -24,9 +24,9 @@
                 android:id="@+id/imageWrapper"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:layout_marginTop="15dip"
-                android:background="#fcfcfc">
+                android:layout_marginTop="25dip"
+                android:background="#fcfcfc"
+                android:orientation="horizontal">
 
 
                 <de.hdodenhof.circleimageview.CircleImageView
@@ -35,40 +35,39 @@
                     android:layout_height="35dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/userimgplc"/>
+                    android:src="@drawable/userimgplc" />
 
                 <TextView
                     android:id="@+id/textUnameSe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Username"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@+id/imgView1"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/imgView1"
+                    android:text="Username"
                     android:textColor="@android:color/black"
-                    />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_alignParentEnd="true">
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
                         android:layout_marginEnd="30dp"
-                        android:src="@drawable/search"
-                        android:layout_marginTop="15dp"/>
+                        android:src="@drawable/search" />
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/bell"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/bell" />
 
                 </LinearLayout>
 
@@ -77,29 +76,29 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="#fcfcfc">
+                android:background="#fcfcfc"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Services"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="sans-serif-black"
-                    android:textStyle="bold"
-                    android:textSize="32dp"
+                    android:text="Services"
                     android:textColor="@android:color/black"
-                    android:layout_marginStart="20dp"/>
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="380dp"
                     android:layout_height="38dp"
+                    android:layout_marginStart="13dp"
                     android:layout_marginTop="17dp"
-                    android:hint="Search Service ..."
-                    android:textColorHint="#d6d6d6"
+                    android:background="@drawable/search_main"
                     android:drawableStart="@drawable/empty_space"
                     android:drawableEnd="@drawable/empty_space"
-                    android:background="@drawable/search_main"
-                    android:layout_marginStart="13dp"/>
+                    android:hint="Search Service ..."
+                    android:textColorHint="#d6d6d6" />
 
             </LinearLayout>
 
@@ -111,14 +110,14 @@
 
                 <RelativeLayout
                     android:id="@+id/cv1"
-                    android:layout_width="160dip"
+                    android:layout_width="170dip"
                     android:layout_height="150dip"
-                    android:layout_marginStart="10dip"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="23dp"
                     android:layout_marginTop="27dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/cv_cover"
-                    android:elevation="20dp"
                     android:clickable="true"
+                    android:elevation="20dp"
                     android:outlineAmbientShadowColor="#dbdbdb"
                     android:outlineSpotShadowColor="#dbdbdb">
 
@@ -126,34 +125,34 @@
                         android:id="@+id/imgCld"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/calendar"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/calendar" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LEAVE TRACKER"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgCld"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="LEAVE TRACKER"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/cv2"
-                    android:layout_width="160dip"
+                    android:layout_width="170dip"
                     android:layout_height="150dip"
-                    android:layout_marginTop="27dp"
                     android:layout_marginStart="15dp"
-                    android:background="@drawable/cv_cover"
-                    android:elevation="20dp"
-                    android:clickable="true"
+                    android:layout_marginTop="27dp"
                     android:layout_toEndOf="@+id/cv1"
+                    android:background="@drawable/cv_cover"
+                    android:clickable="true"
+                    android:elevation="20dp"
                     android:outlineAmbientShadowColor="#dbdbdb"
                     android:outlineSpotShadowColor="#dbdbdb">
 
@@ -161,26 +160,24 @@
                         android:id="@+id/imgAlrm"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/alarm"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/alarm" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME TRACKER"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgAlrm"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="TIME TRACKER"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
 
                 </RelativeLayout>
-
-
 
 
             </RelativeLayout>
@@ -193,12 +190,13 @@
 
                 <RelativeLayout
                     android:id="@+id/cv3"
-                    android:layout_width="160dip"
-                    android:layout_height="150dip"
-                    android:layout_marginStart="10dip"
-                    android:layout_marginEnd="5dp"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="23dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/cv_cover"
+                    android:clickable="true"
                     android:elevation="20dp"
                     android:outlineAmbientShadowColor="#bfbfbf"
                     android:outlineSpotShadowColor="#bfbfbf">
@@ -207,34 +205,34 @@
                         android:id="@+id/imgAtt"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/calen"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/calen" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ATTENDANCE"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgAtt"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="ATTENDANCE"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/cv4"
-                    android:layout_width="160dip"
+                    android:layout_width="170dp"
                     android:layout_height="150dp"
-                    android:layout_marginTop="5dp"
-                    android:clickable="true"
                     android:layout_marginStart="15dp"
-                    android:background="@drawable/cv_cover"
-                    android:elevation="20dp"
+                    android:layout_marginTop="5dp"
                     android:layout_toEndOf="@+id/cv3"
+                    android:background="@drawable/cv_cover"
+                    android:clickable="true"
+                    android:elevation="20dp"
                     android:outlineAmbientShadowColor="#bfbfbf"
                     android:outlineSpotShadowColor="#bfbfbf">
 
@@ -242,21 +240,21 @@
                         android:id="@+id/imgFile"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/folder"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/folder" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="FILES"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgFile"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FILES"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
 
                 </RelativeLayout>
@@ -271,9 +269,9 @@
 
                 <RelativeLayout
                     android:id="@+id/cv5"
-                    android:layout_width="160dip"
-                    android:layout_height="150dp"
-                    android:layout_marginStart="10dip"
+                    android:layout_width="170dip"
+                    android:layout_height="150dip"
+                    android:layout_marginStart="23dp"
                     android:layout_marginEnd="5dp"
                     android:background="@drawable/cv_cover"
                     android:elevation="20dp"
@@ -284,33 +282,33 @@
                         android:id="@+id/imgOrg"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/star"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/star" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ORGANIZATION"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgOrg"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="ORGANIZATION"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/cv6"
-                    android:layout_width="160dip"
+                    android:layout_width="170dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="15dp"
-                    android:clickable="true"
-                    android:background="@drawable/cv_cover"
-                    android:elevation="20dp"
                     android:layout_toEndOf="@+id/cv5"
+                    android:background="@drawable/cv_cover"
+                    android:clickable="true"
+                    android:elevation="20dp"
                     android:outlineAmbientShadowColor="#dbdbdb"
                     android:outlineSpotShadowColor="#dbdbdb">
 
@@ -318,21 +316,21 @@
                         android:id="@+id/imgAnn"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/protest"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/protest" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ANNOUNCEMENT"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgAnn"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="ANNOUNCEMENT"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
 
                 </RelativeLayout>
@@ -347,12 +345,12 @@
 
                 <RelativeLayout
                     android:id="@+id/cv7"
-                    android:layout_width="160dip"
-                    android:layout_height="150dp"
-                    android:clickable="true"
-                    android:layout_marginStart="10dip"
+                    android:layout_width="170dip"
+                    android:layout_height="150dip"
+                    android:layout_marginStart="23dp"
                     android:layout_marginEnd="5dp"
                     android:background="@drawable/cv_cover"
+                    android:clickable="true"
                     android:elevation="20dp"
                     android:outlineAmbientShadowColor="#dbdbdb"
                     android:outlineSpotShadowColor="#dbdbdb">
@@ -361,33 +359,33 @@
                         android:id="@+id/imgPrs"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/presentation"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/presentation" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PRESENTATION"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgPrs"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="PRESENTATION"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/cv8"
-                    android:layout_width="160dip"
+                    android:layout_width="170dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="15dp"
-                    android:clickable="true"
-                    android:background="@drawable/cv_cover"
-                    android:elevation="20dp"
                     android:layout_toEndOf="@+id/cv7"
+                    android:background="@drawable/cv_cover"
+                    android:clickable="true"
+                    android:elevation="20dp"
                     android:outlineAmbientShadowColor="#dbdbdb"
                     android:outlineSpotShadowColor="#dbdbdb">
 
@@ -395,21 +393,21 @@
                         android:id="@+id/imgPlane"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/plane"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"/>
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plane" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BUSINESS TRIP"
-                        android:textStyle="bold"
-                        android:layout_marginTop="20dip"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="@android:color/black"
-                        android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgPlane"
-                        android:textSize="15sp" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="BUSINESS TRIP"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
 
                 </RelativeLayout>
@@ -418,7 +416,6 @@
 
 
         </LinearLayout>
-
 
 
     </androidx.core.widget.NestedScrollView>
